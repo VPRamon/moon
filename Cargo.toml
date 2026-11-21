@@ -13,7 +13,12 @@ bench = false
 test = false
 
 [dependencies]
-siderust = { version = "0.18.1", default-features = false }
+siderust = {
+    git = "https://github.com/Siderust/siderust",
+    rev = "55bc0bb1e246b4a8121a1062856fcded59eb802e",
+    default-features = false,
+    features = ["embedded-compact"]
+}
 libc = { version = "0.2", default-features = false }
 
 [profile.dev]
